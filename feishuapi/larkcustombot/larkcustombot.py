@@ -37,7 +37,7 @@ class LarkCustomBot(object):
         if self.secret != None:
             data['timestamp'] = self.time
             data['sign'] = await self.get_sign(secret=self.secret, timestamp=self.time)
-        print(data)
+        logging.info(data)
         data = json.dumps(data)
         try:
             response = requests.post(webhook, headers=headers, data=data)

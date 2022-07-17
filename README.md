@@ -15,27 +15,29 @@
 ## 三、如何使用
 
 ### 安装库
-
+```cmd
 pip instll feishuapi
+```
+
 
 ### 使用
-
-此库使用了异步
+```python
 import asyncio
 from feishuapi import LarkCustomBot
 
 webhook = '飞书自定义机器人的 webhook 链接'
-
-初始化机器人
+# 初始化机器人
 feishu = LarkCustomBot(webhook=webhook)
 
-如果你给机器人设置了签名：
+# 如果你给机器人设置了签名：
 secret = '你给机器人设置的签名'
 feishu = LarkCustomBot(webhook=webhook，secret=secret)
 
-发送文本消息并艾特全体（默认加在文本最后）：
+# 发送文本消息并艾特全体（默认加在文本最后）：
 asyncio.run(feishu.send_text(text="text content", is_at_all=True))
 
-发送文本消息不艾特全体(is_at_all=False 可以不写，默认是关闭艾特全体的)：
+# 发送文本消息不艾特全体(is_at_all=False 可以不写，默认是关闭艾特全体的)：
 asyncio.run(feishu.send_text(text="text content", is_at_all=False))
-is_at_all=True 表示这条消息要艾特全体，不填写 is_at_all 默认关闭艾特全体
+```
+
+
