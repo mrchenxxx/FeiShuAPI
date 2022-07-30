@@ -24,7 +24,6 @@ pip install feishuapi
 
 ```python
 import asyncio
-from
 from feishuapi import LarkCustomBot
 
 webhook = '飞书自定义机器人的 webhook 链接'
