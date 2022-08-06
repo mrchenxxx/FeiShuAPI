@@ -1,2 +1,4 @@
 /dist/
-/feishuapi/__pycache__/
+*__pycache__/
+/test.py
+*.jpg
