@@ -7,6 +7,7 @@ install:
 deploy:
   provider: pypi
   user: taitai351     
+  script: true
   password: c3562019  
     python: 3.6
     tags: true
