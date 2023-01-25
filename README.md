@@ -32,7 +32,7 @@ feishu = LarkCustomBot(webhook=webhook)
 
 # 如果你给机器人设置了签名：
 secret = '你给机器人设置的签名'
-feishu = LarkCustomBot(webhook=webhook，secret=secret)
+feishu = LarkCustomBot(webhook=webhook,secret=secret)
 
 # 发送文本消息并艾特全体（默认加在文本最后）：
 asyncio.run(feishu.send_text(text="text content", is_at_all=True))
